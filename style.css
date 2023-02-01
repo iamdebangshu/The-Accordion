@@ -1,0 +1,113 @@
+* {
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eeeeee;
+  font-family: 'Ubuntu', sans-serif;
+  line-height: 1;
+}
+
+.accordion {
+  width: 800px;
+  margin: 100px auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.number, .question {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.number {
+  color: #787a91;
+}
+
+.item {
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  column-gap: 24px;
+  row-gap: 32px;
+}
+
+.content {
+  display: none;
+  grid-column: 2;
+}
+
+/* VISUAL HIERARCHY */
+
+.content p {
+  margin-bottom: 24px;
+}
+
+.content ul {
+  color: #787a91;
+  margin-left: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.open {
+  border-top: 4px solid #eba999;
+}
+
+.open .content {
+  display: block;
+}
+
+.open .number {
+  color: #fdab9b;
+}
+
+.open svg{
+  transform: rotate(0deg);
+}
+
+svg {
+  stroke: #89023e;
+  transform: rotate(-90deg);
+}
+
+.logo{
+   justify-content: center;
+   align-items: center;
+   display: flex;
+}
+
+.parent_class{
+display: flex;
+height : 165px;
+width:165px;
+}
+
+.images {
+width: 150px;
+height: 200px;
+display: flex;
+gap: 56px;
+}
+
+.image{
+  width: 150px;
+  height: 200px;
+  display: flex;
+  margin-left: 200px;
+}
+
+.img {
+  width: 150px;
+  height: 200px;
+  display: flex;
+  margin-left: 200px;
+}
